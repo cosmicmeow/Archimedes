@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Archimedes</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="dist/css/bootstrap.css" rel="stylesheet">
+        <link href="dist/css/extra.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body>
+      <div class="row" style="position:fixed;z-index:99">
+        <div class="input-group col-md-12">
+          <input type="text" class="form-control" placeholder="search">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <a href="dashboard.html"><li>Dashboard</li></a>
+          <li>Item Two</li>
+          <li>Account</li>
+        </ul>
+        <button class="btn btn-add">Add Patient +</button>
+      </div>
+
+      
+      <div class="dashboard">
+        <h3>Please fill out the patient's medical information:</h3><br>
+        <div class="medinfo">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">First Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="First Name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Last Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+
+          <script>
+            $(function(){
+              $('.medinfo:last').after('<a href="#" id="new_resource">Add another medication<a/><br/>');
+
+              $('a[href=#]').click(function(){
+                $(this).before($('.medinfo:last').clone());
+
+                $('.medinfo:last input').each(function(){
+                  $(this).removeAttr("value");
+                });
+
+                $('.medinfo:last input[type=hidden]').remove();
+
+                return false;
+              });
+            })
+
+
+          </script>
+
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default"><a href="addmedinfo.html">Submit</a></button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        
+        <script type='text/javascript'>
+          $(document).ready(function() {
+            });
+        </script>
+        
+    </body>
+</html>
