@@ -190,6 +190,20 @@ a:hover, a:focus, a:active {
   height: 70px;
   width: 250px; }
 
+.bottom-stuff2 {
+  background-color: #FFEBE5;
+  width:400px;
+  border-bottom: 5px solid #ffd7cb;
+  height: 70px;
+  margin-right:auto;
+  margin-left: auto;
+  padding: 0; }
+
+.bottom-stuff2 .btn {
+  height: 70px;
+  width: 198px;
+  padding-top:25px; }
+
 .whitebar #navigation{
   height:70px;
   width:100%;
@@ -210,7 +224,28 @@ img.myresize{
   padding: 30px 0;
 
 }
-
+.btn-signup{
+  color:#333;
+}
+.btn-login2{
+  background-color: #FF9786;
+  color: #fff;
+  border-radius: 0px;
+  border-bottom: 5px solid #ff745d;
+  height:70px;
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+  transition: background-color 200ms ease; 
+}
+.login{
+  background-color:#fff;
+  border:1px solid #eee;
+  margin-left:auto;
+  margin-right:auto;
+  width:400px;
+  padding-bottom:0;
+}
 
 #getFixed{
   padding-top:10px;
