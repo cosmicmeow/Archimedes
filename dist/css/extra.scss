@@ -144,6 +144,25 @@ a:hover, a:focus, a:active {
   background-color: #ff6b53;
   color: #fff; }
 
+.btn-login {
+  width:120px;
+  background-color: #FF9786;
+  color: #fff;
+  border-radius: 0px;
+  position:absolute;
+  right:0;
+  padding-top: 25px;
+  border-bottom: 5px solid #ff745d;
+  height:70px;
+  -webkit-transition: background-color 200ms ease;
+  -moz-transition: background-color 200ms ease;
+  -o-transition: background-color 200ms ease;
+  transition: background-color 200ms ease; }
+
+.btn-login:hover, .btn-login:active, .btn-login:focus {
+  background-color: #ff6b53;
+  color: #fff; }
+
 .btn-search {
   color: #fff;
   background-color: #00A388;
@@ -170,3 +189,29 @@ a:hover, a:focus, a:active {
 .bottom-stuff .btn {
   height: 70px;
   width: 250px; }
+
+.whitebar #navigation{
+  height:70px;
+  width:100%;
+  background-color:#fff;
+  border-bottom:1px solid #eee;
+  z-index:0;
+}
+
+img.myresize{
+  width:60%;
+  height:60%;
+}
+
+.wrapper2 {
+  background: #f68076 url('../../img/backgroundimage_scrub.png') no-repeat center center fixed;
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+
+}
+
+
+#getFixed{
+  padding-top:10px;
+}
