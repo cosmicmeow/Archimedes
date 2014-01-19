@@ -79,6 +79,7 @@ a:hover, a:focus, a:active {
   color: #fff;
   border-radius: 0px;
   border-bottom: 5px solid #008a73;
+  padding-top: 25px;
   -webkit-transition: background-color 200ms ease;
   -moz-transition: background-color 200ms ease;
   -o-transition: background-color 200ms ease;

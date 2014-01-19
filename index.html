@@ -23,7 +23,7 @@
     
     <!-- HTML code from Bootply.com editor -->
     
-    <body>
+    <body><!--
         <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
@@ -43,19 +43,20 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.html"><i class="fa fa-cog fa-fw"></i> Log In</a></li>
               </ul>
-            </div><!--/.nav-collapse -->
+            </div><!--/.nav-collapse 
           </div>
         </div>
+      -->
 
         <div class="wrap">
           <div class="main">
 
-            <div class="header" style="padding:60px 0">
+            <div class="header" style="padding:20px 0">
               <div class="container clear-top">
                 <center>
-                  <img src="img/codeboard_logo_300.png">
-                    <h1>Learning code has never been easier</h1>
-                    <p class="lead">Code Board is the platform that further the interactivity in a class room environment lessons. Live code from your teacher directly connected to you!</p>
+                  <img src="img/archimedes_logo.png"><br>
+                  <img src="img/textlogo_md.png" id="fixlogo">
+                    <p class="lead">Healthcare for a modern life</p>
                   <a href="#" class="btn btn-default btn-lg">Learn More</a>
                   <a href="#" class="btn btn-default btn-lg">Contact Us</a>
                 </center>
@@ -152,6 +153,20 @@
 
           </div>
         </div> <!-- wrap-->
+
+        <script>
+          jQuery(function($) {
+            function fixDiv() {
+              var $cache = $('#fixlogo'); 
+              if ($(window).scrollTop() > 100) 
+                $cache.css({'position': 'fixed', 'top': '10px'}); 
+              else
+                $cache.css({'position': 'relative', 'top': 'auto'});
+            }
+            $(window).scroll(fixDiv);
+            fixDiv();
+        });
+        </script>
 
         <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
